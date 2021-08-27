@@ -1,4 +1,6 @@
 client/src/contracts/*.json
+package-lock.json
+yarn.lock
 
 # Logs
 logs
