@@ -19,11 +19,19 @@ module.exports = {
       },
       network_id: 5777
     },
-    rinkeby_infura: {
+    rinkeby: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "https://rinkeby.infura.io/v3/YOUR_INFURA_ID", AccountNum)
+        return new HDWalletProvider(process.env.MNEMONIC, "https://rinkeby.infura.io/v3/" + process.env.INFURA_PROJECT_ID, AccountNum)
       },
-      network_id: 4
+      network_id: 4,
+      gas: 29941437
+    },
+    kovan: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://kovan.infura.io/v3/" + process.env.INFURA_PROJECT_ID, AccountNum)
+      },
+      network_id: 42,
+      gas: 12499000
     }
   },
   compilers: {

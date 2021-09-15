@@ -166,7 +166,7 @@ class App extends Component {
   getLotteryInfo = async (lottery_address) => {
     let lottery = await this.getLottery(lottery_address);
     let stake = await lottery.methods.stake().call();    
-    let num_players = await lottery.methods.settle_at().call();
+    let num_players = await lottery.methods.settleAt().call();
 
     this.setState({
       stake: this.concatArr(this.state.stake, {

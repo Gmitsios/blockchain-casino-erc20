@@ -9,6 +9,8 @@ It's an extension of the [Blockchain Casino](https://github.com/Gmitsios/blockch
   - The winner is picked randomly after all seats are taken and the Lottery resets
   - Enjoy Responsibly!
 
+**Randomness is provided by [ChainLink VRF](https://docs.chain.link/docs/chainlink-vrf/)**
+
 ![](https://github.com/Gmitsios/blockchain-casino-erc20/blob/main/screenshot.png)
 
 ### Dependencies:
