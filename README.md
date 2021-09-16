@@ -29,11 +29,11 @@ For **Metamask**:
 ## Migrate on Blockchain:
     
     npm install
-    truffle migrate --network ganache_local
+    truffle migrate --network kovan
 
 ### To Test the Migration
 
-    truffle test --network ganache_local
+    truffle test --network kovan // be patient on testnets...
 
 ## Run the Front-End React App:
 
